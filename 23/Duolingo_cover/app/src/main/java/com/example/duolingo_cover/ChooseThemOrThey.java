@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Them_or_they extends AppCompatActivity {
+public class ChooseThemOrThey extends AppCompatActivity {
     Button check;
     Button option1;
     Button option2;
-    int choose=0;
+    int choose = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class Them_or_they extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(choose !=0){
-                    AlertDialog.Builder builder = new AlertDialog.Builder(Them_or_they.this);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(ChooseThemOrThey.this);
                     if(choose==1){
                         builder.setMessage("Congratulation! That's a correct answer");
                     }else{
@@ -55,7 +55,7 @@ public class Them_or_they extends AppCompatActivity {
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
-                            startActivity(new Intent(Them_or_they.this, Vocabulary.class));
+                            startActivity(new Intent(ChooseThemOrThey.this, Vocabulary.class));
                         }
                     });
                     builder.show();

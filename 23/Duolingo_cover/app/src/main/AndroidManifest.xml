@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Them_or_they" />
-        <activity android:name=".Choose_Correct" />
+        <activity android:name=".ChooseThemOrThey" />
+        <activity android:name=".ChooseCorrectAnswer" />
         <activity android:name=".Vocabulary">
         </activity>
     </application>

@@ -9,49 +9,49 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Choose_Correct extends AppCompatActivity {
-    Button btn_check;
-    Button btn_opt1;
-    Button btn_opt2;
-    Button btn_opt3;
-    int choose=0;
+public class ChooseCorrectAnswer extends AppCompatActivity {
+    Button check;
+    Button option1;
+    Button option2;
+    Button option3;
+    int choose = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xml_choose_corect);
 
-        btn_check =  findViewById(R.id.Check);
-        btn_check.setEnabled(false);
+        check =  findViewById(R.id.Check);
+        check.setEnabled(false);
 
-        btn_opt1 = findViewById(R.id.option1);
-        btn_opt1.setOnClickListener(new View.OnClickListener() {
+        option1 = findViewById(R.id.option1);
+        option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SetBtn(btn_opt1,btn_opt2,btn_opt3);
+                SetBtn(option1,option2,option3);
                 choose=1;
             }
         });
-        btn_opt2 = findViewById(R.id.option2);
-        btn_opt2.setOnClickListener(new View.OnClickListener() {
+        option2 = findViewById(R.id.option2);
+        option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SetBtn(btn_opt2,btn_opt1,btn_opt3);
+                SetBtn(option2,option1,option3);
                 choose=2;
             }
         });
-        btn_opt3 = findViewById(R.id.option3);
-        btn_opt3.setOnClickListener(new View.OnClickListener() {
+        option3 = findViewById(R.id.option3);
+        option3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SetBtn(btn_opt3,btn_opt2,btn_opt1);
+                SetBtn(option3,option2,option1);
                 choose=3;
             }
         });
-        btn_check.setOnClickListener(new View.OnClickListener() {
+        check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(Choose_Correct.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(ChooseCorrectAnswer.this);
                 if(choose==3){
                     builder.setMessage("Congratulation! That's a correct answer");
                 }else{
@@ -61,7 +61,7 @@ public class Choose_Correct extends AppCompatActivity {
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
-                        startActivity(new Intent(Choose_Correct.this, Them_or_they.class));
+                        startActivity(new Intent(ChooseCorrectAnswer.this, ChooseThemOrThey.class));
                     }
                 });
                 builder.show();
@@ -69,11 +69,11 @@ public class Choose_Correct extends AppCompatActivity {
         });
     }
 
-    protected void SetBtn(Button change, Button otr1, Button otr2) {
+    protected void SetBtn(Button change, Button Other1, Button Other2) {
         change.setBackgroundColor(Color.parseColor("#92ebff"));
-        otr1.setBackgroundColor(Color.parseColor("white"));
-        otr2.setBackgroundColor(Color.parseColor("white"));
-        btn_check.setEnabled(true);
-        btn_check.setBackgroundColor(Color.parseColor("#31cb06"));
+        Other1.setBackgroundColor(Color.parseColor("white"));
+        Other2.setBackgroundColor(Color.parseColor("white"));
+        check.setEnabled(true);
+        check.setBackgroundColor(Color.parseColor("#31cb06"));
     }
 }
