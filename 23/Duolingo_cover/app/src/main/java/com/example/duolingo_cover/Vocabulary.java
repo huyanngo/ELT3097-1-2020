@@ -20,7 +20,6 @@ public class Vocabulary extends AppCompatActivity {
         setContentView(R.layout.xml_vocab);
         kiemTra = findViewById(R.id.button);
         dienVao = findViewById(R.id.textview);
-
         kiemTra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

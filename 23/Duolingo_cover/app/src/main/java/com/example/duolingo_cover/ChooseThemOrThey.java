@@ -27,16 +27,18 @@ public class ChooseThemOrThey extends AppCompatActivity {
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                option1.setBackgroundColor(Color.parseColor("#92ebff"));
-                option2.setBackgroundColor(Color.parseColor("white"));
+                option1.setBackgroundResource(R.drawable.buttonblue);
+                option2.setBackgroundResource(R.drawable.buttonwhite);
+                check.setBackgroundResource(R.drawable.buttongreen);
                 choose = 1;
             }
         });
         option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                option2.setBackgroundColor(Color.parseColor("#92ebff"));
-                option1.setBackgroundColor(Color.parseColor("white"));
+                option2.setBackgroundResource(R.drawable.buttonblue);
+                option1.setBackgroundResource(R.drawable.buttonwhite);
+                check.setBackgroundResource(R.drawable.buttongreen);
                 choose = 2;
             }
         });

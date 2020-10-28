@@ -1,6 +1,7 @@
 package com.example.duolingo_cover;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 picture.setImageResource(R.drawable.abc2);
+                start.setBackgroundResource(R.drawable.buttongreen);
+                start.setTextColor(Color.parseColor("white"));
                 go.setVisibility(View.VISIBLE);
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override

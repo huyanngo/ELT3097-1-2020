@@ -70,10 +70,10 @@ public class ChooseCorrectAnswer extends AppCompatActivity {
     }
 
     protected void SetBtn(Button change, Button Other1, Button Other2) {
-        change.setBackgroundColor(Color.parseColor("#92ebff"));
-        Other1.setBackgroundColor(Color.parseColor("white"));
-        Other2.setBackgroundColor(Color.parseColor("white"));
+        change.setBackgroundResource(R.drawable.buttonblue);
+        Other1.setBackgroundResource(R.drawable.buttonwhite);
+        Other2.setBackgroundResource(R.drawable.buttonwhite);
         check.setEnabled(true);
-        check.setBackgroundColor(Color.parseColor("#31cb06"));
+        check.setBackgroundResource(R.drawable.buttongreen);
     }
 }
