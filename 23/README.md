@@ -6,6 +6,7 @@
 [XML Vocabulary](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_vocab.xml)
 
 # NgoQuangHuy 
+![](NgoQuangHuy2.gif)
 ![](NgoQuangHuy.gif)
 
 [Beginning Layout file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/MainActivity.java)
