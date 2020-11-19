@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChooseImage</string>
+    <string name="coffee">coffee</string>
+    <string name="rice">rice</string>
+    <string name="food">food</string>
+    <string name="ki_m_tra">Kiểm Tra</string>
+    <string name="stringname">Đâu là \"thức ăn\" ?</string>
+    <string name="bread">bread</string>
+</resources>
