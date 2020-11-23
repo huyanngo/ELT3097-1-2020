@@ -14,21 +14,21 @@ import android.widget.TextView;
 
 public class Vocabulary extends AppCompatActivity {
 
-    Button kiemTra;
-    TextView dienVao;
+    Button check;
+    TextView textInput;
 
     private TextWatcher textWatcher = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xml_vocab);
-        kiemTra = findViewById(R.id.button);
-        dienVao = findViewById(R.id.textview);
-        kiemTra.setEnabled(false);
-        kiemTra.setOnClickListener(new View.OnClickListener() {
+        check = findViewById(R.id.button);
+        textInput = findViewById(R.id.textview);
+        check.setEnabled(false);
+        check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str = dienVao.getText().toString();
+                String str = textInput.getText().toString();
                 if(!str.isEmpty()){
                     AlertDialog.Builder builder = new AlertDialog.Builder(Vocabulary.this);
                     if(str.equalsIgnoreCase("hot")){
@@ -55,13 +55,13 @@ public class Vocabulary extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if(!dienVao.getText().toString().isEmpty()){
-                    kiemTra.setEnabled(true);
-                    kiemTra.setBackgroundResource(R.drawable.buttongreen);
-                    kiemTra.setTextColor(Color.parseColor("#ffffff"));
+                if(!textInput.getText().toString().isEmpty()){
+                    check.setEnabled(true);
+                    check.setBackgroundResource(R.drawable.buttongreen);
+                    check.setTextColor(Color.parseColor("#ffffff"));
                 }else{
-                    kiemTra.setEnabled(false);
-                    kiemTra.setBackgroundResource(R.drawable.button);
+                    check.setEnabled(false);
+                    check.setBackgroundResource(R.drawable.button);
                 }
             }
 
@@ -71,6 +71,6 @@ public class Vocabulary extends AppCompatActivity {
             }
         };
 
-        dienVao.addTextChangedListener(textWatcher);
+        textInput.addTextChangedListener(textWatcher);
     }
 }

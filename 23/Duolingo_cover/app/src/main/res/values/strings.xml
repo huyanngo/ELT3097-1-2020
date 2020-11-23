@@ -14,4 +14,9 @@
     <string name="ch_o_m_ng_n_v_i_duolingo">Chào mừng đến với Duolingo</string>
     <string name="textview">TextView</string>
     <string name="let_s_begin">Let\'s Begin</string>
+    <string name="coffee">Coffee</string>
+    <string name="rice">Rice</string>
+    <string name="food">Food</string>
+    <string name="bread">Bread</string>
+    <string name="u_l_th_c_n">Đâu là \"thức ăn\"</string>
 </resources>

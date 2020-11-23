@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".ChooseThemOrThey" />
         <activity android:name=".ChooseCorrectAnswer" />
-        <activity android:name=".Vocabulary">
-        </activity>
+        <activity android:name=".ChooseImage" />
+        <activity android:name=".Vocabulary" />
     </application>
 
 </manifest>

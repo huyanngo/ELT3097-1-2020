@@ -20,6 +20,7 @@ public class ChooseThemOrThey extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xml_them_or_they);
 
+        check.setEnabled(false);
         check = findViewById(R.id.ktra);
         option1 = findViewById(R.id.btn_them);
         option2 = findViewById(R.id.btn_they);
@@ -29,6 +30,7 @@ public class ChooseThemOrThey extends AppCompatActivity {
             public void onClick(View v) {
                 option1.setBackgroundResource(R.drawable.buttonblue);
                 option2.setBackgroundResource(R.drawable.buttonwhite);
+                check.setEnabled(true);
                 check.setBackgroundResource(R.drawable.buttongreen);
                 choose = 1;
             }
@@ -38,6 +40,7 @@ public class ChooseThemOrThey extends AppCompatActivity {
             public void onClick(View v) {
                 option2.setBackgroundResource(R.drawable.buttonblue);
                 option1.setBackgroundResource(R.drawable.buttonwhite);
+                check.setEnabled(true);
                 check.setBackgroundResource(R.drawable.buttongreen);
                 choose = 2;
             }
@@ -57,7 +60,7 @@ public class ChooseThemOrThey extends AppCompatActivity {
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
-                            startActivity(new Intent(ChooseThemOrThey.this, Vocabulary.class));
+                            startActivity(new Intent(ChooseThemOrThey.this, ChooseImage.class));
                         }
                     });
                     builder.show();

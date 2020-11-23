@@ -19,6 +19,7 @@
 
 # NguyenVietHuyKhoi 
 ![](NguyenVietHuyKhoi.gif)
+![](NguyenVietHuyKhoi2.gif)
 
 [Choose Vocabulary file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/ChooseThemOrThey.java)
 
