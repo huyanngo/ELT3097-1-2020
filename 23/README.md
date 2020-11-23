@@ -23,4 +23,8 @@
 
 [Choose Vocabulary file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/ChooseThemOrThey.java)
 
+[Choose Image file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/ChooseImage.java)
+
 [XML Choose Them or They](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_them_or_they.xml)
+
+[XML Choose Image file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_choose_image.xml)
