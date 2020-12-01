@@ -1,13 +1,7 @@
-# TranThanhHuong 
-![](TranThanhHuong.gif)
-
-[Vocabulary file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/Vocabulary.java)
-
-[XML Vocabulary](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_vocab.xml)
-
 # NgoQuangHuy 
 ![](NgoQuangHuy2.gif)
 ![](NgoQuangHuy.gif)
+![](NgoQuangHuy3.gif)
 
 [Beginning Layout file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/MainActivity.java)
 
@@ -16,6 +10,10 @@
 [Choose Correct Answer file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/ChooseCorrectAnswer.java)
 
 [XML Correct Answer](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_choose_corect.xml)
+
+[Vocabulary file](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/java/com/example/duolingo_cover/Vocabulary.java)
+
+[XML Vocabulary](https://github.com/huyanngo/ELT3097-1-2020/blob/master/23/Duolingo_cover/app/src/main/res/layout/xml_vocab.xml)
 
 # NguyenVietHuyKhoi 
 ![](NguyenVietHuyKhoi.gif)
