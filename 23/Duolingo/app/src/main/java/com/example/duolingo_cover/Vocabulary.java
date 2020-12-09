@@ -11,17 +11,26 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Vocabulary extends AppCompatActivity {
 
     Button check;
     TextView textInput;
+    int lives;
+    TextView liveText;
 
     private TextWatcher textWatcher = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xml_vocab);
+
+        liveText = findViewById(R.id.lives);
+        Intent intent = getIntent();
+        lives = intent.getIntExtra("lives", 0);
+        liveText.setText("" + lives);
+
         check = findViewById(R.id.button);
         textInput = findViewById(R.id.textview);
         check.setEnabled(false);
@@ -34,12 +43,24 @@ public class Vocabulary extends AppCompatActivity {
                     if(str.equalsIgnoreCase("hot")){
                         builder.setMessage("Congratulation! That's a correct answer");
                     }else{
-                        builder.setMessage("Wrong answer :((");
+                        lives = lives -1;
+                        if(lives<0){
+                            builder.setMessage("GAME OVER");
+                        }else{
+                            builder.setMessage("Wrong answer :((");
+                        }
                     }
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
-                            startActivity(new Intent(Vocabulary.this, ChooseCorrectAnswer.class));
+                            if(lives<0){
+                                Intent intent2 = new Intent(Vocabulary.this, MainActivity.class);
+                                startActivity(intent2);
+                            }else{
+                                Intent intent2 = new Intent(Vocabulary.this, ChooseCorrectAnswer.class);
+                                intent2.putExtra("lives",lives);
+                                startActivity(intent2);
+                            }
                         }
                     });
                     builder.show();

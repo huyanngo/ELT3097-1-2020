@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
     Button start;
     ImageView picture;
     TextView go;
+    int lives;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         picture = findViewById(R.id.pic);
         start = findViewById(R.id.Start);
         go = findViewById(R.id.go);
@@ -33,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(new Intent(MainActivity.this, Vocabulary.class));
+                        Intent intent =new Intent(MainActivity.this, Vocabulary.class);
+
+                        intent.putExtra("lives",3);
+                        startActivity(intent);
                     }
                 },2000);
             }
